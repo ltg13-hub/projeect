@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    background: #061e2c;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+}
+
+.social-box .box {
+    background: #dbe0e6;
+    border-radius: 10px; 
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 40px 10px;
+    transition: all 0.5s ease-out;
+}
+
+.social-box .box:hover {
+   box-shadow: 0 0 6px #4183D7;
+}
+
+.social-box .box-text {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.social-box .box-btn a {
+    color: #4183D7;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.zoom-in {
+    transform: scale(0.5);
+    opacity: 0;
+    animation: zoomIn 1s ease-in-out forwards;
+  }
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+.social-box .fa {
+    color: #4183D7;
+}
